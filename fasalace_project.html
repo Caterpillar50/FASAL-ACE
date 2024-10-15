@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FasalAce - Sustainable Farming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>FasalAce</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#soil-analysis">Soil Analysis</a></li>
+                <li><a href="#fertilizer-recommendation">Fertilizer Recommendations</a></li>
+                <li><a href="#weather">Weather Updates</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <h2>Welcome to FasalAce</h2>
+            <p>Analyze your soil, get tailored fertilizer recommendations, and optimize crop yield sustainably.</p>
+            <button onclick="scrollToSection('soil-analysis')">Get Started</button>
+        </div>
+    </section>
+
+    <section id="soil-analysis">
+        <h2>Soil Analysis</h2>
+        <form id="soil-form">
+            <label for="ph">Soil pH:</label>
+            <input type="number" id="ph" name="ph" step="0.01" min="0" max="14" placeholder="e.g., 7.0" required>
+            <label for="moisture">Moisture Level (%):</label>
+            <input type="number" id="moisture" name="moisture" step="0.1" placeholder="e.g., 25.0" required>
+            <label for="texture">Soil Texture:</label>
+            <input type="text" id="texture" name="texture" placeholder="e.g., Loamy" required>
+            <button type="button" onclick="analyzeSoil()">Submit</button>
+        </form>
+        <div id="analysis-result"></div>
+    </section>
+
+    <section id="fertilizer-recommendation">
+        <h2>Fertilizer Recommendations</h2>
+        <p>Based on your soil analysis, we recommend the following:</p>
+        <div id="fertilizer-result"></div>
+    </section>
+
+    <section id="weather">
+        <h2>Weather Updates</h2>
+        <div id="weather-info">Loading weather updates...</div>
+    </section>
+
+    <section id="about">
+        <h2>About FasalAce</h2>
+        <p>FasalAce is dedicated to empowering farmers by providing insights based on soil analysis, tailored fertilizer recommendations, and weather predictions.</p>
+    </section>
+
+    <footer>
+        <p>FasalAce &copy; 2024 | Sustainable Farming Solutions</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
