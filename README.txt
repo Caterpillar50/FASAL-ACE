@@ -31,7 +31,7 @@ This project is the frontend for the FasalAce application, a Smart India Hackath
 - JavaScript (for client-side interaction)
 
 ## Author:
-Aditya Prem - [Your GitHub Profile Link]
+Pallavi Kumari 
 
 This project was built as part of the Smart India Hackathon 2024.
 
